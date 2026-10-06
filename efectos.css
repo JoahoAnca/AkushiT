@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #d32f2f 0%, #00bcd4 100%); /* Transición de rojo a celeste */
+}
+/* Franja negra centrada para el título "Página principal" */
+.banner-titulo {
+    background-color: #000000; /* Fondo negro */
+    text-align: center;         /* Centra el texto */
+    padding: 15px 0;           /* Grosor de la franja */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}
+
+.banner-titulo h1 {
+    color: #ffffff; /* Letras blancas */
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Ajuste de la barra de búsqueda */
+.container {
+    position: relative;
+    margin: 10px 20px;
+    flex-grow: 1; /* Permite que el buscador tome más espacio horizontal si hay lugar */
+    max-width: 600px; /* Limita el ancho máximo para que se vea equilibrado */
+}
+
+.container input {
+    width: 100%; /* Hace que el buscador ocupe todo el ancho disponible del contenedor */
+    height: 40px; /* Un poco más alto para mejor interacción */
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-sizing: border-border-box;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff; /* Texto blanco legible sobre azul */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffca28;
+}
+
+/* Ocultar el contenedor de resultados cuando no tiene elementos */
+#resultados {
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Esta regla oculta la caja blanca vacía */
+#resultados:empty {
+    display: none;
+    border: none;
+}
+
+.resultado-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.resultado-item:hover {
+    background: #eee;
+}
+
+/* Grilla de productos */
+#productos, #listaCarrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.producto button {
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d47a1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #1565c0;
+}
+
+.producto h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.producto p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* Vista detalle del producto */
+.detalle-producto {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.imagen-producto img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.info-producto {
+    max-width: 500px;
+}
+
+.info-producto h1 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.info-producto h2 {
+    color: #2e7d32;
+    font-size: 28px;
+}
+
+.info-producto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.info-producto button {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d47a1;
+    color: white;
+    cursor: pointer;
+}
+
+/* Formulario de Contacto y Compra */
+.contacto-container, #formularioCompra {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Configuracion del costo en costo total en tiempo real */
+/* Cuadro flotante del costo total */
+.cuadro-total-flotante {
+    position: fixed;
+    top: 100px; /* Se posiciona debajo de la barra azul del header */
+    right: 30px;
+    background-color: #ffffff;
+    border: 2px solid #0d47a1;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    z-index: 900;
+}
+
+.cuadro-total-flotante h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333333;
+}
+
+#montoTotalFlotante {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e7d32; /* Verde para destacar el precio */
+}
+
+/* Ocultar o adaptar si la pantalla es muy pequeña (Celulares) */
+@media (max-width: 900px) {
+    .cuadro-total-flotante {
+        position: static;
+        width: auto;
+        margin: 20px auto;
+    }
+}
+/* Estilo para la aclaración estética junto al precio */
+.unidad-precio {
+    font-size: 13px;
+    color: #666666;
+    font-weight: normal;
+}
+
+/* Estilo para la barra del pie de página (Footer) */
+.pie-pagina {
+    background-color: #0d47a1; /* Mismo azul del header */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.pie-pagina strong {
+    color: #ffca28; /* Amarillo resaltado para el número */
+    font-size: 20px;
+}

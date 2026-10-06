@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificaciones de compra</title>
+    <link rel="icon" href="logoAT3.png" type="image/png">
+    <link rel="stylesheet" href="efectos.css">
+
+    <!-- 1. Datos base de productos -->
+    <script src="productos.js" defer></script>
+    <!-- 2. Funciones globales/auxiliares -->
+    <script src="funciones.js" defer></script>    
+    <!-- 3. Funcionalidad del buscador del header -->
+    <script src="buscador.js" defer></script>
+    <!-- 4. Lógica propia del formulario de compra (depende de los anteriores) -->
+    <script src="compra.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="diosAkushi.png" alt="Logo AkushiT" height="150px">
+        </a>
+        <div class="container">
+            <input type="text" id="buscador" placeholder="Buscar...">
+            <div id="resultados"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="carrito_compras.html">Carrito de compras</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cuadro flotante con el total en tiempo real -->
+    <div id="resumenFlotante" class="cuadro-total-flotante">
+        <h3>Total a pagar</h3>
+        <div id="montoTotalFlotante">S/. 0.00</div>
+    </div>
+
+    <main class="contacto-container">
+        <h1>Especificaciones del Pedido (Paso 1 de 2)</h1>
+
+        <form id="formularioEspecificaciones">
+            <h2>Productos en tu pedido</h2>
+            
+            <!-- Contenedor dinámico de los productos -->
+            <div id="productosPedido"></div>
+
+            <br>
+            <button type="submit" style="width: 100%; padding: 14px; font-size: 16px; font-weight: bold; cursor: pointer; background-color: #0d47a1; color: white; border: none; border-radius: 5px;">
+                Siguiente: Ingresar datos de entrega &rarr;
+            </button>
+        </form>
+    </main>
+    <footer class="pie-pagina">
+        <p>Cualquier duda a este número: <strong>+51 949 749 592</strong></p>
+    </footer>
+</body>
+</html>
