@@ -53,6 +53,9 @@
             <label for="nombre">Quién lo recibirá</label><br>
             <input type="text" id="nombre" name="nombre" required><br><br>
 
+            <label for="telefono">Número telefónico (para coordinar detalles)</label><br>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
             <h2>Forma de recibir el pedido</h2>
             <label>
                 <input type="radio" name="tipo_entrega" value="recoger" checked>
@@ -66,12 +69,30 @@
             <!-- Sección de datos condicionales -->
             <div id="seccionDelivery" style="display: none;">
                 <h2>Datos de envío</h2>
-                <label for="telefono">Número telefónico (para coordinar)</label><br>
-                <input type="tel" id="telefono" name="telefono"><br><br>
 
-                <label for="distrito">Distrito</label><br>
-                <input type="text" id="distrito" name="distrito"><br><br>
-
+                <label for="distrito">Distrito de entrega</label><br>
+                <select id="distrito" name="distrito" style="width: 100%; padding: 10px; font-size: 15px; margin-top: 5px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc;">
+                <option value="" disabled selected>Selecciona tu distrito</option>
+                <option value="Comas">Comas</option>
+                <option value="Carabayllo">Carabayllo</option>
+                <option value="Independencia">Independencia</option>
+                <option value="Rimac">Rímac</option>
+                <option value="San Martin de Porres">San Martín de Porres</option>
+                <option value="Cercado de Lima">Cercado de Lima</option>
+                <option value="La Victoria">La Victoria</option>
+                <option value="Lince">Lince</option>
+                <option value="San Isidro">San Isidro</option>
+                <option value="Miraflores">Miraflores</option>
+                <option value="Barranco">Barranco</option>
+                <option value="Chorrillos">Chorrillos</option>
+                <option value="Puente Piedra">Puente Piedra</option>
+                <option value="Los Olivos">Los Olivos</option>
+                <option value="Breña">Breña</option>
+                <option value="Jesus Maria">Jesús María</option>
+                <option value="Surquillo">Surquillo</option>
+                <option value="Santiago de Surco">Santiago de Surco</option>
+                </select><br>
+                
                 <label for="direccion">Dirección</label><br>
                 <input type="text" id="direccion" name="direccion"><br><br>
 
