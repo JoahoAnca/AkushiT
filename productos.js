@@ -40,7 +40,7 @@ const productos = [
     {
         id: 5,
         nombre: "Camiseta con Vinil Textil PU",
-        imagen: "textilaPU.jpg",
+        imagen: "textilaPU.png",
         categoria: "Camiseta personalizada",
         precio: 40,
         descripcion: "Camiseta del color que quieras con el diseño que quieras con la mejor calidad, el tamaño del estampado puede abarcar toda la camiseta, aunque con una varieda de colores limitada."
@@ -48,7 +48,7 @@ const productos = [
     {
         id: 6,
         nombre: "Camiseta con Vinil Textil PVC",
-        imagen: "textilPVC.jpg",
+        imagen: "textilPVC.png",
         categoria: "Camiseta personalizada",
         precio: 30,
         descripcion: "Camiseta del color que quieras con el diseño que quieras, el tamaño del estampado puede abarcar toda la camiseta, aunque con una varieda de colores limitada"
@@ -57,6 +57,10 @@ const productos = [
         id: 7,
         nombre: "Camiseta con Sublimacion",
         imagen: "camiseta sublimada.png",
+        galeria: [
+            { tipo: "imagen", url: "camiseta sublimada.png" },
+            { tipo: "imagen", url: "camiseta sublimada2.png" }
+        ],
         categoria: "Camiseta personalizada",
         precio: 35,
         descripcion: "Camiseta blanca con el diseño que quieras, con toda la variedad de colores para el diseño."
