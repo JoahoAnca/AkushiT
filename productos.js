@@ -26,19 +26,6 @@ const productos = [
     },
     {
         id: 4,
-        nombre: "Tarjeta de presentacion",
-        imagen: "tarjeta de presentacion.png",
-        galeria: [
-            { tipo: "imagen", url: "tarjeta de presentacion.png" },
-            { tipo: "imagen", url: "tarjeta de presentacion2.png" }
-        ],
-        categoria: "Tarjeta de presentacion",
-        precio: 8,
-        unidad: "x 100U",
-        descripcion: "Tarjetas de presentacion para tu negocio, con el diseño que quieras, disponibilidad de 2 modelos, uno en material delgado con toda la gama de colores y la otra en material mas grueso pero sin el color negro disponible."
-    },
-    {
-        id: 5,
         nombre: "Camiseta con Vinil Textil PU",
         imagen: "textilaPU.png",
         categoria: "Camiseta personalizada",
@@ -46,7 +33,7 @@ const productos = [
         descripcion: "Camiseta del color que quieras con el diseño que quieras con la mejor calidad, el tamaño del estampado puede abarcar toda la camiseta, aunque con una varieda de colores limitada."
     },
     {
-        id: 6,
+        id: 5,
         nombre: "Camiseta con Vinil Textil PVC",
         imagen: "textilPVC.png",
         categoria: "Camiseta personalizada",
@@ -54,7 +41,7 @@ const productos = [
         descripcion: "Camiseta del color que quieras con el diseño que quieras, el tamaño del estampado puede abarcar toda la camiseta, aunque con una varieda de colores limitada"
     },
     {
-        id: 7,
+        id: 6,
         nombre: "Camiseta con Sublimacion",
         imagen: "camiseta sublimada.png",
         galeria: [
@@ -66,7 +53,7 @@ const productos = [
         descripcion: "Camiseta blanca con el diseño que quieras, con toda la variedad de colores para el diseño."
     },
     {
-        id: 8,
+        id: 7,
         nombre: "Camiseta con Transfer",
         imagen: "vinil textil imprimible.png",
         categoria: "Camiseta personalizada",
@@ -74,7 +61,7 @@ const productos = [
         descripcion: "Camiseta de cualqueir color con el diseño que quieras, con toda la variedad de colores para el diseño."
     },
     {
-        id: 9,
+        id: 8,
         nombre: "Corte en Stiker",
         imagen: "stiker personalizados.png",
         galeria: [
@@ -90,7 +77,7 @@ const productos = [
         descripcion: "El diseño con la forma o palabra que quieras que corte en el papel de stiker del color que desees, yo mismo quito el sobrante y te dejo el siker listo para que lo pongas donde desees."
     },
     {
-        id: 10,
+        id: 9,
         nombre: "Impresion Fotografica",
         imagen: "fotos.png",
         categoria: "Impresion",
@@ -98,7 +85,7 @@ const productos = [
         descripcion: "Impresion en papel fotografico con la mejor calidad disponible en toda la gama de colores."
     },
     {
-        id: 11,
+        id: 10,
         nombre: "Impresion normal",
         imagen: "imprecion.jpg",
         categoria: "Impresion",
@@ -107,7 +94,7 @@ const productos = [
         descripcion: "Impresion en papel bond con la mejor calidad disponible en toda la gama de colores."
     },
     {
-        id: 12,
+        id: 11,
         nombre: "Tatuajes temporales",
         imagen: "tatuajes.png",
         galeria: [
@@ -122,7 +109,7 @@ const productos = [
         descripcion: "Tatuajes temporales con el diseño que tu quieran en toda la gama de colores, fácil de colocar, solo quitas la capa protectora, lo poner sobre la piel y humedeces, en 30 segundo los retiras lentamente y estará en ti."
     },
     {
-        id: 13,
+        id: 12,
         nombre: "Bocaditos",
         imagen: "buffet.png",
         categoria: "Buffet",
@@ -131,7 +118,7 @@ const productos = [
         descripcion: "Para tu fiesta una variedad de 6 bocaditos diferentes con 25 unidades de cada uno, disponiendo de una gran lista de opciones para su gusto."
     },
     {
-        id: 14,
+        id: 13,
         nombre: "Pasteles",
         imagen: "pastel.png",
         categoria: "Buffet",
