@@ -3,7 +3,11 @@ const productos = [
     {
         id: 1,
         nombre: "Taza 11oz",
-        imagen: "taza personalizada.png",
+        imagen: "taza personalizada.jpg",
+        galeria: [
+            { tipo: "imagen", url: "taza personalizada.jpg" },
+            { tipo: "imagen", url: "taza personalizada2.jpg" }
+        ],
         categoria: "Taza personalizada",
         precio: 15,
         descripcion: "Tazas personalizadas de 11 onzas con cualquier diseño que puedas pedir."
@@ -19,7 +23,7 @@ const productos = [
     {
         id: 3,
         nombre: "Taza conicas 14oz",
-        imagen: "taza conica 14oz.png",
+        imagen: "taza conica 14oz.jpg",
         categoria: "Taza personalizada",
         precio: 21,
         descripcion: "Tazas conica personalizadas de 14 onzas con cualquier diseño que puedas pedir."
@@ -27,7 +31,7 @@ const productos = [
     {
         id: 4,
         nombre: "Camiseta con Vinil Textil PU",
-        imagen: "textilaPU.png",
+        imagen: "textilaPU.jpg",
         categoria: "Camiseta personalizada",
         precio: 40,
         descripcion: "Camiseta del color que quieras con el diseño que quieras con la mejor calidad, el tamaño del estampado puede abarcar toda la camiseta, aunque con una varieda de colores limitada."
@@ -35,7 +39,7 @@ const productos = [
     {
         id: 5,
         nombre: "Camiseta con Vinil Textil PVC",
-        imagen: "textilPVC.png",
+        imagen: "textilPVC.jpg",
         categoria: "Camiseta personalizada",
         precio: 30,
         descripcion: "Camiseta del color que quieras con el diseño que quieras, el tamaño del estampado puede abarcar toda la camiseta, aunque con una varieda de colores limitada"
@@ -43,10 +47,10 @@ const productos = [
     {
         id: 6,
         nombre: "Camiseta con Sublimacion",
-        imagen: "camiseta sublimada.png",
+        imagen: "camiseta sublimada.jpg",
         galeria: [
-            { tipo: "imagen", url: "camiseta sublimada.png" },
-            { tipo: "imagen", url: "camiseta sublimada2.png" }
+            { tipo: "imagen", url: "camiseta sublimada.jpg" },
+            { tipo: "imagen", url: "camiseta sublimada2.jpg" }
         ],
         categoria: "Camiseta personalizada",
         precio: 35,
@@ -55,7 +59,7 @@ const productos = [
     {
         id: 7,
         nombre: "Camiseta con Transfer",
-        imagen: "vinil textil imprimible.png",
+        imagen: "vinil textil imprimible.jpg",
         categoria: "Camiseta personalizada",
         precio: 45,
         descripcion: "Camiseta de cualqueir color con el diseño que quieras, con toda la variedad de colores para el diseño."
@@ -63,13 +67,13 @@ const productos = [
     {
         id: 8,
         nombre: "Corte en Stiker",
-        imagen: "stiker personalizados.png",
+        imagen: "stiker personalizados.jpg",
         galeria: [
-            { tipo: "imagen", url: "stiker personalizados.png" },
-            { tipo: "imagen", url: "stiker personalizados2.png" },
-            { tipo: "imagen", url: "stiker personalizados3.png" },
-            { tipo: "imagen", url: "stiker personalizados4.png" },
-            { tipo: "imagen", url: "stiker personalizados5.png" }
+            { tipo: "imagen", url: "stiker personalizados.jpg" },
+            { tipo: "imagen", url: "stiker personalizados2.jpg" },
+            { tipo: "imagen", url: "stiker personalizados3.jpg" },
+            { tipo: "imagen", url: "stiker personalizados4.jpg" },
+            { tipo: "imagen", url: "stiker personalizados5.jpg" }
         ],
         categoria: "Stiker Personalizado",
         precio: 30,
@@ -79,7 +83,7 @@ const productos = [
     {
         id: 9,
         nombre: "Impresion Fotografica",
-        imagen: "fotos.png",
+        imagen: "fotos.jpg",
         categoria: "Impresion",
         precio: 5,
         descripcion: "Impresion en papel fotografico con la mejor calidad disponible en toda la gama de colores."
@@ -96,12 +100,12 @@ const productos = [
     {
         id: 11,
         nombre: "Tatuajes temporales",
-        imagen: "tatuajes.png",
+        imagen: "tatuajes.jpg",
         galeria: [
-            { tipo: "imagen", url: "tatuajes.png" },
-            { tipo: "imagen", url: "tatuajes2.png" },
-            { tipo: "imagen", url: "tatuajes3.png" },
-            { tipo: "imagen", url: "tatuajes4.png" }
+            { tipo: "imagen", url: "tatuajes.jpg" },
+            { tipo: "imagen", url: "tatuajes2.jpg" },
+            { tipo: "imagen", url: "tatuajes3.jpg" },
+            { tipo: "imagen", url: "tatuajes4.jpg" }
         ],
         categoria: "Impresion",
         precio: 20,
@@ -111,7 +115,12 @@ const productos = [
     {
         id: 12,
         nombre: "Bocaditos",
-        imagen: "buffet.png",
+        imagen: "buffet.jpg",
+        galeria: [
+            { tipo: "imagen", url: "buffet.jpg" },
+            { tipo: "imagen", url: "buffet2.jpg" }
+        ],
+        
         categoria: "Buffet",
         precio: 150,
         unidad: "25U de 6 opciones",
@@ -120,7 +129,13 @@ const productos = [
     {
         id: 13,
         nombre: "Pasteles",
-        imagen: "pastel.png",
+        imagen: "pastel.jpg",
+        galeria: [
+            { tipo: "imagen", url: "pastel.jpg" },
+            { tipo: "imagen", url: "pastel2.jpg" },
+            { tipo: "imagen", url: "pastel3.jpg" },
+            { tipo: "imagen", url: "pastel4.jpg" }
+        ],
         categoria: "Buffet",
         precio: 45,
         unidad: "20cm diametro",
