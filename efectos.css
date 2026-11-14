@@ -251,11 +251,67 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
         margin: 20px auto;
     }
 }
-/* Estilo para la aclaración estética junto al precio */
-.unidad-precio {
-    font-size: 13px;
-    color: #666666;
-    font-weight: normal;
+/* Contenedor principal del pie de página */
+.pie-pagina {
+    display: flex;
+    justify-content: space-between; /* Empuja un bloque a la izquierda y el otro a la derecha */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que se adapte bien en celulares */
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px 30px;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+/* Estilo del contacto a la izquierda */
+.contacto-izquierda p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contacto-izquierda a {
+    color: #00bcd4; /* Celeste acorde a tu marca */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto-izquierda a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de las 4 redes a la derecha */
+.redes-derecha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Separación entre cada red social */
+    align-items: center;
+}
+
+/* Cada bloque individual (Logo + Nombre clicable) */
+.red-social-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el logo y el texto */
+}
+
+.red-social-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.red-social-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.red-social-item a:hover {
+    color: #d32f2f; /* Resalta en rojo al pasar el mouse */
+    text-decoration: underline;
 }
 
 /* Estilo para la barra del pie de página (Footer) */
